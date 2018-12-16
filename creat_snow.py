@@ -1,6 +1,5 @@
 import pygame
 import random
-import clock
 # 背景图片名称
 image_name = "winter.jpg"
 # 初始化
@@ -40,7 +39,7 @@ while not done:
             snow[i][1] = random.randrange(-50, -10)
             snow[i][0] = random.randrange(0, screen_size[0])
     pygame.display.flip()
-    clock.tick(20)
+
 
 pygame.quit()
 
